@@ -19,22 +19,19 @@
             <a class="navigation-link" href="">О Cедоне</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="">Гостиницы</a>
+            <a class="navigation-link" href="catalog.html">Гостиницы</a>
           </li>
         </ul>
         <ul class="navigation-user">
           <li class="navigation-user-item">
             <a class="navigation-user-link" href="">
-              <span class="visually-hidden">
-              Поиск
-              </span>
+              <span class="visually-hidden">Поиск</span>
             </a>
           </li>
           <li class="navigation-user-item">
             <a class="navigation-user-link" href="">
-              <span class="visually-hidden">
-                Избранное
-              </span>
+              <span class="visually-hidden">Избранное</span>
+              <p>12</p>
             </a>
           </li>
         </ul>
@@ -106,7 +103,8 @@
         <h2>Подпишитесь на рассылку</h2>
         <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="subscribe-form" action="https://echo.htmlacademy.ru">
-          <input type="email" name="e-mail" placeholder="Ваш e-mail" required>
+          <label for="newsletter-email">Email</label>
+          <input type="email" name="e-mail" placeholder="Ваш e-mail"  id="newsletter-email" required>
           <button class="button-subscribe" type="submit">Подписаться</button>
         </form>
       </section>

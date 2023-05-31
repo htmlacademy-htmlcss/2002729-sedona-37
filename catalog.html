@@ -42,8 +42,9 @@
       <h1>Гостиницы Седоны</h1>
       <ul class="breadcrumbs">
         <li class="breadcrumbs-item">
-          <span class="visually-hidden">На главную</span>
-          <a class="breadcrumbs-link" href=""></a>
+          <a class="breadcrumbs-link" href="index.html">
+            <span class="visually-hidden">На главную</span>
+          </a>
         </li>
         <li class="breadcrumbs-item">
           <a class="breadcrumbs-link navigation-link-current">Гостиницы</a>
@@ -109,8 +110,8 @@
               <input class="control-input" type="text" name="max-price" value="9000">
             </label>
             <div class="range">
-              <button class="button-range"></button>
-              <button class="button-range"></button>
+              <button class="button-range" type="button"></button>
+              <button class="button-range" type="button"></button>
             </div>
         </fieldset>
         <div class="catalog-filter-buttons">
@@ -124,17 +125,25 @@
       <p>Найдено гостиниц: 38</p>
       <select name="sorting">
         <option value="cheap">Сначала дешевые</option>
+        <option value="cheap">Сначала дорогие</option>
+        <option value="cheap">Сначала популярные</option>
       </select>
 
       <ul class="card-view-buttons">
         <li class="card-view-item">
-          <button class="card-view-button active" type="button"></button>
+          <button class="card-view-button active" type="button">
+            <span class="visually-hidden">Показать карточки</span>
+          </button>
         </li>
         <li class="card-view-item">
-          <button class="card-view-button" type="button"></button>
+          <button class="card-view-button" type="button">
+            <span class="visually-hidden">Показать карточку целиком</span>
+          </button>
         </li>
         <li class="card-view-item">
-          <button class="card-view-button" type="button"></button>
+          <button class="card-view-button" type="button">
+            <span class="visually-hidden">Показать карточки</span>
+          </button>
         </li>
       </ul>
     </section>
@@ -192,7 +201,6 @@
       </ul>
       <ul class="pagination">
         <li class="pagination-item">
-        <li class="pagination-item">
           <a class="pagination-link pagination-current">1</a>
         </li>
         <li class="pagination-item">
@@ -227,17 +235,17 @@
     <ul class="social-list">
       <li class="social-item">
         <a href="https://vk.com/htmlacademy">
-          <img src="#" alt="Vkontakte" width="24" height="14">
+          <span class="visually-hidden">Вконтакте</span>
         </a>
       </li>
       <li class="social-item">
         <a href="https://t.me/htmlacademy">
-          <img src="#" alt="Telegram" width="18" height="15">
+          <span class="visually-hidden">Телеграм</span>
         </a>
       </li>
       <li class="contacts-item">
         <a href="https://www.youtube.com/user/htmlacademyru">
-          <img src="#" alt="Youtube" width="22" height="17">
+          <span class="visually-hidden">Ютуб</span>
         </a>
       </li>
     </ul>

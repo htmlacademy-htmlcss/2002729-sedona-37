@@ -215,3 +215,22 @@ color: #333333;
   font-size: 16px;
   line-height: 21px;
 }
+
+.catalog-filter-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+/* filter-sort */
+.filter-sort {
+  background-color: #FFFFFF;
+}
+
+.filter-sort-text {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #000000;
+}

@@ -192,11 +192,13 @@ color: #333333;
 
 /* catalog */
 /* filters */
-.catalog-filters-container {
+.catalog-products {
   background-image: url(../images/catalog-filter-background.jpg);
   background-repeat: no-repeat;
   background-size: 100% auto;
   color: #FFFFFF;
+  font-size: 18px;
+  line-height: 23px;
 }
 .catalog-filters-header h1 {
   font-weight: 700;

@@ -198,11 +198,18 @@ color: #333333;
   background-size: 100% auto;
   color: #FFFFFF;
 }
-.catalog-products {
-
+.catalog-filters-header h1 {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 78px;
 }
 
 .button-filter-reset {
   border: 0;
   background: transparent;
+}
+
+.breadcrumbs-item {
+  font-size: 16px;
+  line-height: 21px;
 }

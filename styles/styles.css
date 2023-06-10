@@ -22,6 +22,10 @@ body {
   color: #333333;
 }
 
+.background-white {
+  background-color: #ffffff;
+}
+
 
 /* buttons */
 .button {
@@ -33,6 +37,7 @@ body {
   text-transform: uppercase;
   text-align: center;
   text-decoration: none;
+  border: 0;
 }
 
 .button-brown {
@@ -43,11 +48,11 @@ body {
   background-color: #82b3d3;
 }
 
-/* header */
-.page-header {
-  background-color: #ffffff;
+.button-green {
+  background-color: #7db54f;
 }
 
+/* header */
 .navigation-link {
   width: 160px;
   font-size: 20px;
@@ -55,7 +60,6 @@ body {
   font-weight: 700;
   text-align: center;
   color: #000000;
-  background-color: #ffffff;
   text-decoration: none;
 }
 
@@ -77,10 +81,6 @@ body {
 }
 
 /* advantages */
-.advantages {
-  background-color: #ffffff;
-}
-
 .advantages-heading {
   font-weight: 700;
   font-size: 30px;
@@ -128,10 +128,6 @@ body {
 
 
 /* services */
-.services {
-  background-color: #ffffff;
-}
-
 .services-heading {
   font-weight: 700;
   font-size: 30px;
@@ -154,10 +150,6 @@ body {
 }
 
 /* booking */
-.booking {
-  background: #ffffff;
-}
-
 .booking-heading {
   font-weight: 700;
   font-size: 30px;
@@ -172,11 +164,10 @@ body {
 }
 
 /* subscribe */
-.subscribe {
+.subscribe-background {
   background-image: url("../images/index-subscribe-background.jpg");
   background-repeat: no-repeat;
   background-size: 100% auto;
-  color: #ffffff;
 }
 
 .subscribe-heading {
@@ -192,10 +183,6 @@ body {
 }
 
 /* footer */
-.main-footer {
-  background-color: #ffffff;
-}
-
 .tel-link {
   font-size: 40px;
   line-height: 40px;
@@ -238,10 +225,6 @@ body {
 }
 
 /* filter-sort */
-.filter-sort {
-  background-color: #ffffff;
-}
-
 .filter-sort-text {
   font-weight: 700;
   font-size: 30px;
@@ -251,13 +234,32 @@ body {
 }
 
 /* product-card */
-.product-card {
-  background-color: #ffffff;
-}
-
 .product-card h3 {
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
+  color: #000000;
+}
+
+.product-cards-rating {
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.pagination {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.pagination-link {
+  background-color: #82b3d3;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.pagination-current {
   color: #000000;
 }

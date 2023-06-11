@@ -1,0 +1,272 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+body {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  background-color: #f2f2f2;
+  color: #333333;
+}
+
+.background-white {
+  background-color: #ffffff;
+}
+
+
+/* buttons */
+.button {
+  font-family: "PT Sans", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  border: 0;
+}
+
+.button-brown {
+  background-color: #756157;
+}
+
+.button-blue {
+  background-color: #82b3d3;
+}
+
+.button-green {
+  background-color: #7db54f;
+}
+
+/* header */
+.navigation-link {
+  width: 160px;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  text-align: center;
+  color: #000000;
+  text-decoration: none;
+}
+
+.navigation-user-link {
+  text-decoration: none;
+}
+
+.like-number {
+  font-size: 10px;
+  line-height: 10px;
+  background-color: #7db54f;
+}
+
+/* hero */
+.hero {
+  background-image: url("../images/index-hero-background.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
+/* advantages */
+.advantages-heading {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.advantages-text {
+  font-size: 22px;
+  line-height: 26px;
+  color: #333333;
+}
+
+.advantages-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.advantages-item {
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.color-white,
+.color-white .advantages-title {
+  color: #ffffff;
+}
+
+/* background-color */
+.background-blue {
+  background-color: #82b3d3;
+}
+
+.background-light-blue {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.background-medium-blue {
+  background-color: rgba(131, 179, 211, 0.2);
+}
+
+
+/* services */
+.services-heading {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.services-text {
+  font-size: 22px;
+  line-height: 26px;
+  color: #333333;
+}
+
+.services-title {
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+/* booking */
+.booking-heading {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.booking-text {
+  font-size: 22px;
+  line-height: 26px;
+}
+
+/* subscribe */
+.subscribe-background {
+  background-image: url("../images/index-subscribe-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.subscribe-heading {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.subscribe-text {
+  font-size: 22px;
+  line-height: 26px;
+}
+
+/* footer */
+.tel-link {
+  font-size: 40px;
+  line-height: 40px;
+  text-decoration: none;
+  color: #000000;
+}
+
+/* catalog */
+/* filters */
+.catalog-products {
+  background-image: url("../images/catalog-filter-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 23px;
+  background-color: #82b3d3;
+}
+
+.catalog-filters-header h1 {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 78px;
+}
+
+.button-filter-reset {
+  border: 0;
+  background: transparent;
+}
+
+.breadcrumbs-link {
+  font-size: 16px;
+  line-height: 21px;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.catalog-filter-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+/* filter-sort */
+.filter-sort-text {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+/* product-card */
+.product-card h3 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+}
+
+.product-cards-rating {
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.pagination {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.pagination-link {
+  background-color: #82b3d3;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.pagination-current {
+  color: #000000;
+}
+
+/* subscribe */
+.subscribe-catalog h2 {
+  color: #000000;
+}

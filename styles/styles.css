@@ -14,16 +14,44 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
+
 body {
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
   background-color: #f2f2f2;
   color: #333333;
+  margin: 0;
+  min-width: 1200px;
 }
 
-.background-white {
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.page-container {
   background-color: #ffffff;
+  margin: 0 auto;
+  width: 1200px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-index {
+  flex-grow: 1;
 }
 
 
@@ -38,6 +66,7 @@ body {
   text-align: center;
   text-decoration: none;
   border: 0;
+  padding: 8px 34px;
 }
 
 .button-brown {
@@ -53,6 +82,32 @@ body {
 }
 
 /* header */
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.navigation-logo {
+  display: block;
+}
+
+.navigation-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  width: 450px;
+  list-style: none;
+}
+
+.navigation-user {
+  margin: 0;
+  padding: 0;
+  max-width: 250px;
+  margin-left: auto;
+  list-style: none;
+  display: flex;
+}
+
 .navigation-link {
   width: 160px;
   font-size: 20px;
@@ -65,6 +120,10 @@ body {
 
 .navigation-user-link {
   text-decoration: none;
+  align-items: center;
+  display: block;
+  width: 44px;
+  height: 64px;
 }
 
 .like-number {
@@ -73,26 +132,51 @@ body {
   background-color: #7db54f;
 }
 
+.search {
+  background-image: url("../images/search.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.like {
+  background-image: url("../images/like.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 /* hero */
 .hero {
-  background-image: url("../images/index-hero-background.jpg");
+  background-image: url("../images/hero-white-vector.svg"), url("../images/index-hero-background.jpg");
   background-repeat: no-repeat;
-  background-size: 100% auto;
+  background-size: auto, cover;
+  background-position: bottom center, center;
+  text-align: center;
+}
+
+.hero img {
+  padding-top: 51px;
+  padding-bottom: 82px;
 }
 
 /* advantages */
+.advantages {
+  text-align: center;
+}
+
 .advantages-heading {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   color: #000000;
   text-transform: uppercase;
+  margin: 69px 290px 25px;
 }
 
 .advantages-text {
   font-size: 22px;
   line-height: 26px;
   color: #333333;
+  margin-bottom: 90px;
 }
 
 .advantages-title {
@@ -101,11 +185,34 @@ body {
   line-height: 28px;
   text-transform: uppercase;
   color: #000000;
+  margin-top: 102px;
+  margin-bottom: 62px;
+}
+
+.advantages-description {
+  margin-top: 0;
+  margin-bottom: 112px;
+  margin-left: 85px;
+  margin-right: 85px;
+}
+
+.advantages-list {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
 }
 
 .advantages-item {
   font-size: 18px;
   line-height: 21px;
+  width: 400px;
+}
+
+.advantages-width {
+  width: 1200px;
+  display: flex;
 }
 
 .color-white,
@@ -149,6 +256,10 @@ body {
   color: #000000;
 }
 
+.services-list {
+  display: flex;
+}
+
 /* booking */
 .booking-heading {
   font-weight: 700;
@@ -161,6 +272,11 @@ body {
 .booking-text {
   font-size: 22px;
   line-height: 26px;
+}
+
+.button-booking {
+  font-size: 20px;
+  line-height: 36px;
 }
 
 /* subscribe */
@@ -182,6 +298,11 @@ body {
   line-height: 26px;
 }
 
+.button-subscribe {
+  font-size: 20px;
+  line-height: 36px;
+}
+
 /* footer */
 .tel-link {
   font-size: 40px;
@@ -189,6 +310,12 @@ body {
   text-decoration: none;
   color: #000000;
 }
+
+.main-footer {
+  display: flex;
+  justify-content: space-between;
+}
+
 
 /* catalog */
 /* filters */
@@ -200,6 +327,10 @@ body {
   font-size: 18px;
   line-height: 23px;
   background-color: #82b3d3;
+}
+
+.catalog-filter {
+  display: flex;
 }
 
 .catalog-filters-header h1 {
@@ -254,6 +385,7 @@ body {
   font-size: 20px;
   line-height: 36px;
   text-transform: uppercase;
+  display: flex;
 }
 
 .pagination-link {

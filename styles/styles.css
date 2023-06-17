@@ -14,16 +14,44 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
+
 body {
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
   background-color: #f2f2f2;
   color: #333333;
+  margin: 0;
+  min-width: 1200px;
 }
 
-.background-white {
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.page-container {
   background-color: #ffffff;
+  margin: 0 auto;
+  width: 1200px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-index {
+  flex-grow: 1;
 }
 
 
@@ -38,6 +66,8 @@ body {
   text-align: center;
   text-decoration: none;
   border: 0;
+  padding: 8px 34px;
+  border-radius: 4px;
 }
 
 .button-brown {
@@ -53,46 +83,115 @@ body {
 }
 
 /* header */
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.navigation-logo-link {
+  display: block;
+  margin-left: 70px;
+  margin-right: 44px;
+}
+
+.navigation-logo-img {
+  display: block;
+}
+
+.navigation-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  width: 450px;
+  list-style: none;
+}
+
+.navigation-user {
+  margin: 0;
+  padding: 0;
+  max-width: 250px;
+  margin-left: auto;
+  list-style: none;
+  display: flex;
+}
+
 .navigation-link {
-  width: 160px;
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
   text-align: center;
   color: #000000;
   text-decoration: none;
+  display: block;
+  margin-right: 32px;
 }
 
 .navigation-user-link {
   text-decoration: none;
+  align-items: center;
+  display: block;
+  width: 44px;
+  height: 64px;
+  margin: 0;
 }
 
 .like-number {
   font-size: 10px;
   line-height: 10px;
   background-color: #7db54f;
+  margin: 0;
+  display: inline-block;
+}
+
+.search {
+  background-image: url("../images/search.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.like {
+  background-image: url("../images/like.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.button-nav {
+  margin-right: 70px;
 }
 
 /* hero */
 .hero {
-  background-image: url("../images/index-hero-background.jpg");
+  background-image: url("../images/hero-white-vector.svg"), url("../images/index-hero-background.jpg");
   background-repeat: no-repeat;
-  background-size: 100% auto;
+  background-size: auto, cover;
+  background-position: bottom center, center;
+  text-align: center;
+}
+
+.hero img {
+  padding-top: 51px;
+  padding-bottom: 82px;
 }
 
 /* advantages */
+.advantages {
+  text-align: center;
+}
+
 .advantages-heading {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   color: #000000;
   text-transform: uppercase;
+  margin: 69px 290px 25px;
 }
 
 .advantages-text {
   font-size: 22px;
   line-height: 26px;
   color: #333333;
+  margin-bottom: 90px;
 }
 
 .advantages-title {
@@ -101,11 +200,37 @@ body {
   line-height: 28px;
   text-transform: uppercase;
   color: #000000;
+  margin-top: 102px;
+  margin-bottom: 62px;
+}
+
+.advantages-description {
+  margin-bottom: 112px;
+  margin-left: 85px;
+  margin-right: 85px;
+}
+
+.advantages-list {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
 }
 
 .advantages-item {
   font-size: 18px;
   line-height: 21px;
+  width: 400px;
+}
+
+.advantages-width {
+  width: 1200px;
+  display: flex;
+}
+
+.advantages-reverse {
+  flex-direction: row-reverse;
 }
 
 .color-white,
@@ -128,18 +253,34 @@ body {
 
 
 /* services */
+.services {
+  text-align: center;
+}
+
 .services-heading {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   color: #000000;
   text-transform: uppercase;
+  margin: 64px 347px 20px;
 }
 
 .services-text {
   font-size: 22px;
   line-height: 26px;
   color: #333333;
+  margin-bottom: 64px;
+}
+
+.services-list {
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.services-item {
+  list-style: none;
 }
 
 .services-title {
@@ -147,23 +288,49 @@ body {
   line-height: 28px;
   text-transform: uppercase;
   color: #000000;
+  margin: 183px 85px 30px;
+}
+
+.services-description {
+  margin-left: 85px;
+  margin-right: 85px;
+  margin-bottom: 81px;
 }
 
 /* booking */
+.booking {
+  text-align: center;
+}
+
 .booking-heading {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   color: #000000;
   text-transform: uppercase;
+  margin: 96px 451px 20px;
 }
 
 .booking-text {
   font-size: 22px;
   line-height: 26px;
+  margin-top: 0;
+  margin-left: 304px;
+  margin-right: 304px;
+  margin-bottom: 54px;
+}
+
+.button-booking {
+  font-size: 20px;
+  line-height: 36px;
+  margin-bottom: 96px;
 }
 
 /* subscribe */
+.subscribe {
+  text-align: center;
+}
+
 .subscribe-background {
   background-image: url("../images/index-subscribe-background.jpg");
   background-repeat: no-repeat;
@@ -175,20 +342,65 @@ body {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
+  margin: 0;
+  padding-top: 96px;
+  margin-bottom: 20px;
 }
 
 .subscribe-text {
   font-size: 22px;
   line-height: 26px;
+  margin-top: 0;
+  margin-left: 362px;
+  margin-right: 362px;
+  margin-bottom: 54px;
+}
+
+.subscribe-form {
+  padding-bottom: 104px;
+}
+
+.button-subscribe {
+  font-size: 20px;
+  line-height: 36px;
 }
 
 /* footer */
+.main-footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 45px;
+  padding-bottom: 35px;
+}
+
+.social-list {
+  width: 164px;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+}
+
+.social-link {
+  width: 24px;
+  height: 17px;
+  display: block;
+}
+
+.tel {
+  margin: 0;
+}
+
 .tel-link {
   font-size: 40px;
   line-height: 40px;
   text-decoration: none;
   color: #000000;
+  display: block;
 }
+
 
 /* catalog */
 /* filters */
@@ -202,10 +414,15 @@ body {
   background-color: #82b3d3;
 }
 
+.catalog-filter {
+  display: flex;
+}
+
 .catalog-filters-header h1 {
   font-weight: 700;
   font-size: 60px;
   line-height: 78px;
+  margin: 0;
 }
 
 .button-filter-reset {
@@ -254,6 +471,7 @@ body {
   font-size: 20px;
   line-height: 36px;
   text-transform: uppercase;
+  display: flex;
 }
 
 .pagination-link {

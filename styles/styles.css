@@ -100,6 +100,7 @@ body {
 
 .navigation-list {
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   width: 450px;
@@ -123,15 +124,15 @@ body {
   color: #000000;
   text-decoration: none;
   display: block;
-  margin-right: 32px;
+  padding: 20px 16px;
 }
 
 .navigation-user-link {
   text-decoration: none;
   align-items: center;
   display: block;
-  width: 44px;
-  height: 64px;
+  min-width: 44px;
+  min-height: 64px;
   margin: 0;
 }
 
@@ -222,6 +223,7 @@ body {
   font-size: 18px;
   line-height: 21px;
   width: 400px;
+  min-height: 385px;
 }
 
 .advantages-width {
@@ -324,6 +326,7 @@ body {
   font-size: 20px;
   line-height: 36px;
   margin-bottom: 96px;
+  padding: 8px 50px;
 }
 
 /* subscribe */
@@ -358,11 +361,14 @@ body {
 
 .subscribe-form {
   padding-bottom: 104px;
+  display: flex;
+  justify-content: center;
 }
 
 .button-subscribe {
   font-size: 20px;
   line-height: 36px;
+  padding: 8px 50px;
 }
 
 /* footer */
@@ -375,7 +381,7 @@ body {
 }
 
 .social-list {
-  width: 164px;
+  width: 142px;
   list-style: none;
   display: flex;
   justify-content: space-between;
@@ -384,9 +390,10 @@ body {
 }
 
 .social-link {
-  width: 24px;
-  height: 17px;
+  min-width: 24px;
+  min-height: 17px;
   display: block;
+  padding: 12px 12px;
 }
 
 .tel {
@@ -414,20 +421,20 @@ body {
   background-color: #82b3d3;
 }
 
-.catalog-filter {
-  display: flex;
-}
-
 .catalog-filters-header h1 {
   font-weight: 700;
   font-size: 60px;
   line-height: 78px;
   margin: 0;
+  padding: 35px 635px 8px 70px;
 }
 
-.button-filter-reset {
-  border: 0;
-  background: transparent;
+.breadcrumbs {
+  padding: 0;
+  margin: 0;
+  margin-left: 70px;
+  margin-bottom: 40px;
+  list-style: none;
 }
 
 .breadcrumbs-link {
@@ -437,19 +444,81 @@ body {
   color: #ffffff;
 }
 
+.catalog-filter {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  margin-left: 70px;
+}
+
+.catalog-filter-group {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
 .catalog-filter-title {
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
+  margin-bottom: 32px;
 }
 
+.catalog-filter-list {
+  margin: 0;
+  padding: 0;
+}
+
+.catalog-filter-item {
+  list-style: none;
+  margin-bottom: 16px;
+}
+
+.catalog-filter-infrastructure {
+  margin-right: 70px;
+}
+
+.catalog-filter-housing {
+  margin-right: 140px;
+}
+
+.catalog-filter-cost {
+  margin-right: 241px;
+}
+
+.catalog-filter-buttons {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.button-filter-reset {
+  border: 0;
+  background: transparent;
+}
+
+
 /* filter-sort */
+.filter-sort {
+  display: flex;
+  align-items: center;
+}
+
 .filter-sort-text {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
   color: #000000;
+  margin: 56px 220px 66px 70px;
+}
+
+.sorting {
+  margin-right: 85px;
+}
+
+.card-view-buttons {
+  display: flex;
 }
 
 /* product-card */
@@ -466,18 +535,39 @@ body {
   text-transform: uppercase;
 }
 
+.button-filter-accept,
+.button-filter-reset {
+  padding: 8px 50px;
+}
+
+.button-product-card {
+  padding: 8px 26px;
+}
+
 .pagination {
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
   text-transform: uppercase;
   display: flex;
+  margin: 0;
+  margin-left: 70px;
+  padding: 0;
+  list-style: none;
+}
+
+.pagination-item:not(:last-child) {
+  margin-right: 8px;
 }
 
 .pagination-link {
   background-color: #82b3d3;
   text-decoration: none;
   color: #ffffff;
+  box-sizing: border-box;
+  width: 60px;
+  height: 60px;
+  padding: 11px 24px 12px;
 }
 
 .pagination-current {

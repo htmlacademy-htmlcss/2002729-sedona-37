@@ -554,7 +554,7 @@ body {
 }
 
 .product-card-link {
-  display: grid;
+  grid-column: 1/-1;
 }
 
 .product-card-item {
@@ -566,8 +566,7 @@ body {
 }
 
 .product-card-img {
-  grid-column: 1/-1;
-  margin-bottom: 16px;
+
 }
 
 .hotel-name {

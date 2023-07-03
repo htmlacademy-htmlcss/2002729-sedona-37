@@ -48,7 +48,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  box-shadow: rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
 .main-index {
@@ -614,7 +614,6 @@ body {
   display: flex;
   padding: 0 70px;
   margin: 0;
-  padding-bottom: 70px;
 }
 
 .catalog-filter-group {
@@ -680,12 +679,17 @@ body {
   outline-color: rgba(131, 179, 211, 1);
 }
 
-.range {
+.range-scale {
   position: relative;
   height: 4px;
-  margin-bottom: 16px;
+  margin-bottom: 78px;
+
+}
+
+.range-bar {
+  position: absolute;
+  height: 4px;
   background-color: rgba(255, 255, 255, 1);
-  border-radius: 2px;
 }
 
 .button-filter-accept,
@@ -737,6 +741,11 @@ body {
   outline-color: rgba(104, 162, 202, 1);
   height: 49px;
   border-radius: 4px;
+}
+
+.sorting:hover,
+.sorting:focus {
+  border: 2px solid #68a2ca;
 }
 
 .card-view-buttons {
@@ -794,12 +803,14 @@ body {
 
 .product-card-list {
   padding: 0;
+  padding-bottom: 40px;
   margin: 0;
-  margin-bottom: 80px;
+  margin-bottom: 40px;
   list-style: none;
   display: grid;
   grid-template-columns: repeat(3, 340px);
   gap: 20px;
+  border-bottom: 1px solid rgba(230, 230, 230, 1);
 }
 
 .product-card-link {
@@ -822,6 +833,25 @@ body {
   margin: 0;
   grid-column: 1/-1;
 }
+
+.stars-raiting {
+  background-image: url("../images/star.svg");
+  background-repeat: space;
+  height: 17px;
+}
+
+.stars-4 {
+  width: 86px;
+}
+
+.stars-3 {
+  width: 65px;
+}
+
+.stars-2 {
+  width: 42px;
+}
+
 
 .hotel {
   grid-column: 1/2;
@@ -890,6 +920,7 @@ body {
   width: 60px;
   height: 60px;
   padding: 11px 10px 12px;
+  border: 1px solid transparent;
 }
 
 .pagination-current {
@@ -898,7 +929,7 @@ body {
 }
 
 .pagination a:not(.pagination-current):hover {
-  border: 1px solid rgba(130, 179, 211, 1);
+  border-color: rgba(130, 179, 211, 1);
   background-color: rgba(104, 162, 202, 1);
 }
 

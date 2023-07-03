@@ -69,6 +69,7 @@ body {
   border: 0;
   padding: 8px 34px;
   border-radius: 4px;
+  cursor: pointer;
 }
 
 .button-brown {
@@ -617,7 +618,6 @@ body {
 }
 
 .catalog-filter-group {
-  min-width: 150px;
   padding: 0;
   margin: 0;
   border: 0;
@@ -648,14 +648,9 @@ body {
   margin-right: 140px;
 }
 
-.catalog-filter-cost {
-  margin-right: 90px;
-}
-
-.catalog-filter-price-wrapper {
+.catalog-filter-inputs-wrapper {
   display: flex;
   margin-bottom: 36px;
-  width: 288px;
 }
 
 .control:hover {
@@ -666,30 +661,76 @@ body {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.catalog-filter-buttons {
+.range {
   display: flex;
   flex-direction: column;
-  height: 104px;
+  width: 288px;
 }
 
-.catalog-filter-price .control-input {
+.catalog-filter-input .control-input {
   width: 143px;
   height: 48px;
-  box-sizing: border-box;
+  padding: 0;
+  border: none;
   outline-color: rgba(131, 179, 211, 1);
+}
+
+.min-price {
+  border-radius: 4px 0 0 4px;
+  margin-right: 2px;
+}
+
+.max-price {
+  border-radius: 0 4px 4px 0;
 }
 
 .range-scale {
   position: relative;
   height: 4px;
   margin-bottom: 78px;
-
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 .range-bar {
   position: absolute;
   height: 4px;
+  width: 226px;
   background-color: rgba(255, 255, 255, 1);
+}
+
+.range-toggle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.min-toggle {
+  top: -8px;
+  left: 0;
+}
+
+.max-toggle {
+  top: -8px;
+  right: -15px;
+}
+
+.range-toggle:hover {
+  outline: 3px solid rgba(131, 179, 211, 1);
+}
+
+.range-toggle:active {
+  outline: 3px solid rgba(131, 179, 211, 0.6);
+}
+
+.catalog-filter-buttons {
+  display: flex;
+  flex-direction: column;
+  height: 104px;
+  margin-left: auto;
 }
 
 .button-filter-accept,

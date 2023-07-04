@@ -110,10 +110,12 @@
           <div class="range">
             <div class="catalog-filter-inputs-wrapper">
               <label class="catalog-filter-input">
-                <input class="control-input min-price" type="number" name="min-price" value="0">
+                <input class="control-input-cost min-price" type="number" name="min-price" value="0">
+                <span class="cost-span">от</span>
               </label>
               <label class="catalog-filter-input">
-                <input class="control-input max-price" type="number" name="max-price" value="9000">
+                <input class="control-input-cost max-price" type="number" name="max-price" value="9000">
+                <span class="cost-span">до</span>
               </label>
             </div>
 
@@ -257,7 +259,7 @@
       <p class="subscribe-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
       <form class="subscribe-form" action="https://echo.htmlacademy.ru">
         <label class="visually-hidden" for="newsletter-email">Email</label>
-        <input type="email" name="e-mail" placeholder="Ваш e-mail"  id="newsletter-email" required>
+        <input class="subscribe-input" type="email" name="e-mail" placeholder="Ваш e-mail"  id="newsletter-email" required>
         <button class="button button-blue button-subscribe" type="submit">Подписаться</button>
       </form>
     </section>

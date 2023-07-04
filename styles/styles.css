@@ -634,13 +634,7 @@ body {
   margin-bottom: 32px;
 }
 
-.catalog-filter-list {
-  margin: 0;
-  padding: 0;
-}
-
 .catalog-filter-item {
-  list-style: none;
   margin-bottom: 16px;
 }
 
@@ -675,12 +669,6 @@ body {
   appearance: none;
 }
 
-.control-input-cost::-webkit-outer-spin-button,
-.control-input-cost::-webkit-inner-spin-button {
-  appearance: none;
-  margin: 0;
-}
-
 .cost-span {
   position: absolute;
   left: 105px;
@@ -689,6 +677,12 @@ body {
   line-height: 24px;
   text-align: right;
   color: rgba(0, 0, 0, 0.3);
+}
+
+.control-input-cost::-webkit-outer-spin-button,
+.control-input-cost::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
 }
 
 .control-input-cost:hover {
@@ -785,6 +779,74 @@ body {
   color: rgba(255, 255, 255, 0.3);
 }
 
+/* control  */
+.control {
+  position: relative;
+  display: block;
+  padding-left: 36px;
+}
+
+.control-mark {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 20px;
+  height: 19px;
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 4px;
+}
+
+.control:active .control-mark {
+  outline: 2px solid rgba(131, 179, 211, 1);
+}
+
+.control-input[type="checkbox"]:checked + .control-mark::before {
+  position: absolute;
+  top: 11px;
+  left: 3px;
+  width: 7px;
+  height: 2px;
+  background-color: #3f5e72;
+  content: "";
+  transform: rotate(45deg);
+}
+
+.control-input[type="checkbox"]:checked + .control-mark::after {
+  position: absolute;
+  top: 9px;
+  left: 6px;
+  width: 12px;
+  height: 2px;
+  background-color: #3f5e72;
+  content: "";
+  transform: rotate(-45deg);
+}
+
+.control-input[type="radio"] + .control-mark {
+  border-radius: 50%;
+}
+
+.control-input[type="radio"]:checked + .control-mark::before {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 10px;
+  height: 10px;
+  background-color: #3f5e72;
+  border-radius: 50%;
+  content: "";
+}
+
+.control-label {
+  line-height: 23px;
+  font-size: 18px;
+}
+
+.catalog-filter-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
 
 /* filter-sort */
 .filter-sort {
@@ -797,16 +859,23 @@ body {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
+  min-width: 338px;
   text-transform: uppercase;
   color: #000000;
-  margin: 56px auto 46px 0;
+  margin-right: auto;
 }
 
 .sorting {
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 21px;
+  margin-top: 50px;
   margin-right: 85px;
+  margin-bottom: 40px;
   width: 292px;
   outline-color: rgba(104, 162, 202, 1);
   height: 49px;
+  box-sizing: border-box;
   border-radius: 4px;
 }
 

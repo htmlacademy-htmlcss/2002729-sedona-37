@@ -146,12 +146,13 @@
     <section class="filter-sort">
       <h2 class="visually-hidden">Сортировка результатов</h2>
       <p class="filter-sort-title">Найдено гостиниц: 38</p>
-      <select class="sorting" name="sorting">
-        <option value="cheap">Сначала дешевые</option>
-        <option value="cheap">Сначала дорогие</option>
-        <option value="cheap">Сначала популярные</option>
-      </select>
-
+      <div class= "sorting sorting-type">
+        <select class="sorting-control" name="sorting" aria-label="Сортировка">
+          <option value="cheap">Сначала дешевые</option>
+          <option value="expensive">Сначала дорогие</option>
+          <option value="popular">Сначала популярные</option>
+        </select>
+      </div>
       <ul class="card-view-buttons">
         <li class="card-view-item">
           <button class="card-view-button card-view-button-tile card-view-button-active" type="button">

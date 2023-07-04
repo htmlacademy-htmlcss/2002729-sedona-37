@@ -625,6 +625,7 @@ body {
   padding: 0;
   margin: 0;
   border: 0;
+  min-width: 150px;
 }
 
 .catalog-filter-title {
@@ -632,9 +633,16 @@ body {
   font-size: 20px;
   line-height: 24px;
   margin-bottom: 32px;
+  padding: 0;
 }
 
-.catalog-filter-item {
+.catalog-filter-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.catalog-filter-item:not(:last-child) {
   margin-bottom: 16px;
 }
 
@@ -648,7 +656,7 @@ body {
 
 .catalog-filter-inputs-wrapper {
   display: flex;
-  margin-bottom: 42px;
+  margin-bottom: 43px;
 }
 
 .catalog-filter-input {
@@ -671,7 +679,7 @@ body {
 
 .cost-span {
   position: absolute;
-  left: 105px;
+  right: 20px;
   top: 11px;
   font-size: 18px;
   line-height: 24px;
@@ -729,13 +737,13 @@ body {
 }
 
 .min-toggle {
-  top: -8px;
+  top: -6px;
   left: 0;
 }
 
 .max-toggle {
-  top: -8px;
-  right: -15px;
+  top: -6px;
+  right: -1px;
 }
 
 .range-toggle:hover {
@@ -842,17 +850,14 @@ body {
   font-size: 18px;
 }
 
-.catalog-filter-list {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
-
 /* filter-sort */
 .filter-sort {
   display: flex;
   align-items: center;
   padding: 0 70px;
+  margin-top: 50px;
+  margin-bottom: 40px;
+  height: 49px;
 }
 
 .filter-sort-title {
@@ -862,25 +867,32 @@ body {
   min-width: 338px;
   text-transform: uppercase;
   color: #000000;
-  margin-right: auto;
+  margin-right: 200px;
 }
 
 .sorting {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.sorting-control {
   font-family: inherit;
   font-size: 18px;
   line-height: 21px;
-  margin-top: 50px;
-  margin-right: 85px;
-  margin-bottom: 40px;
+  margin-right: 70px;
+  padding-left: 20px;
   width: 292px;
-  outline-color: rgba(104, 162, 202, 1);
   height: 49px;
-  box-sizing: border-box;
   border-radius: 4px;
+  background-image: url("../images/sorting-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: 93% 54%;
+  appearance: none;
 }
 
-.sorting:hover,
-.sorting:focus {
+.sorting-control:hover,
+.sorting-control:focus {
   border: 2px solid #68a2ca;
 }
 

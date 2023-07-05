@@ -146,5 +146,28 @@
       </p>
     </footer>
     </div>
+
+    <div class=" visually-hidden">
+      <div class="modal modal-booking">
+        <h2>Поиск гостиницы в Седоне</h2>
+        <button class="modal-close-button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <form class="appointment-form" action="https://echo.htmlacademy.ru/" method="post">
+          <label class="form-label" for="appointment-date">Дата Заезда:</label>
+            <input class="field" type="text" id="appointment-date" name="booking-date" placeholder="27 апреля 2020">
+          <label class="form-label" for="appointment-date">Дата Выезда:</label>
+            <input class="field" type="text" id="appointment-date" name="booking-date" placeholder="1 сентября 2023">
+
+          <label class="catalog-filter-input">Взрослые:</label>
+            <input class="control-input-cost min-price" type="number" name="" value="2">
+          <label class="catalog-filter-input">Дети:</label>
+            <span class="info"></span>
+            <input class="control-input-cost max-price" type="number" name="" value="2">
+        </form>
+        <button class="button button-subscribe button-blue" type="submit">Найти</button>
+      </div>
+    </div>
+
   </body>
 </html>

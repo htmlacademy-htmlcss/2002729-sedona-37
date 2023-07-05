@@ -459,6 +459,7 @@ body {
   border: none;
   border-radius: 4px 0 0 4px;
   padding-left: 20px;
+  box-sizing: border-box;
 }
 
 .button-subscribe {
@@ -947,13 +948,14 @@ body {
 /* product-card */
 .product-card {
   padding: 0 70px;
+  margin-bottom: 60px;
 }
 
 .product-card-list {
   padding: 0;
   padding-bottom: 40px;
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 37px;
   list-style: none;
   display: grid;
   grid-template-columns: repeat(3, 340px);
@@ -961,7 +963,12 @@ body {
   border-bottom: 1px solid rgba(230, 230, 230, 1);
 }
 
+.product-card-img {
+  vertical-align: bottom;
+}
+
 .product-card-link {
+  display: block;
   grid-column: 1/-1;
 }
 
@@ -986,10 +993,11 @@ body {
   background-image: url("../images/star.svg");
   background-repeat: space;
   height: 17px;
+  margin: 9px 1px;
 }
 
 .stars-4 {
-  width: 86px;
+  width: 89px;
 }
 
 .stars-3 {

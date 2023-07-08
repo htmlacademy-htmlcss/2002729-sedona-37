@@ -157,12 +157,12 @@
           <form class="booking-form" action="https://echo.htmlacademy.ru/" method="post">
             <p class="field-group">
               <label class="form-label" for="booking-date">Дата Заезда:</label>
-              <input class="booking-date-field" type="text" id="booking-date" name="booking-date" placeholder="Укажите дату">
+              <input class="booking-date-field" type="text" id="booking-date" name="check-in-date" placeholder="Укажите дату" required>
               <span class="booking-date-span booking-date-error">Мы не можем отправить вас в прошлое.</span>
             </p>
             <p class="field-group">
               <label class="form-label" for="booking-date">Дата Выезда:</label>
-              <input class="booking-date-field" type="text" id="booking-date" name="booking-date" placeholder="Укажите дату">
+              <input class="booking-date-field" type="text" id="booking-date" name="exit-date" placeholder="Укажите дату" required>
               <span class="booking-date-span">На эти даты есть свободные номера. Пока есть.</span>
             </p>
             <div class="adilts-children-wrapper">
@@ -174,7 +174,7 @@
                     <path d="M0 0L0 2L14 2V0L0 0Z"/>
                     </svg>
                 </button>
-                <input class="control-input-adults" type="number" name="adults" value="2">
+                <input class="control-input-adults" type="number" name="adults" value="2" required>
                 <button class="button-quantity button-plus" type="button">
                   <span class="visually-hidden">Увеличить количество</span>
                   <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="currentColor">
@@ -205,11 +205,10 @@
                 </button>
               </p>
           </div>
+          <button class="button button-blue button-modal-search" type="submit">Найти</button>
           </form>
         </section>
-        <button class="button button-blue button-modal-search" type="submit">Найти</button>
       </div>
     </div>
-
   </body>
 </html>

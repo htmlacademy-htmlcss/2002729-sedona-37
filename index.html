@@ -158,7 +158,7 @@
             <p class="field-group">
               <label class="form-label" for="booking-date">Дата Заезда:</label>
               <input class="booking-date-field" type="text" id="booking-date" name="booking-date" placeholder="Укажите дату">
-              <span class="booking-date-span booking-date-span-red">Мы не можем отправить вас в прошлое.</span>
+              <span class="booking-date-span booking-date-error">Мы не можем отправить вас в прошлое.</span>
             </p>
             <p class="field-group">
               <label class="form-label" for="booking-date">Дата Выезда:</label>
@@ -167,30 +167,42 @@
             </p>
             <div class="adilts-children-wrapper">
               <p class="field-group">
-                <label class="form-label">Взрослые:</label>
-                <button class="calendar-button" type="button">
-                  <span class="visually-hidden">Увеличить количество</span>
+                <label class="form-label adults-label">Взрослые:</label>
+                <button class="button-quantity button-minus" type="button">
+                  <span class="visually-hidden">Уменьшить количество</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="2" viewBox="0 0 14 2" fill="none">
+                    <path d="M0 0L0 2L14 2V0L0 0Z" fill="#756157" fill-opacity="0.3"/>
+                    </svg>
                 </button>
                 <input class="control-input-adults" type="number" name="adults" value="2">
-                <button class="calendar-button" type="button">
-                  <span class="visually-hidden">Уменьшить количество</span>
+                <button class="button-quantity button-plus" type="button">
+                  <span class="visually-hidden">Увеличить количество</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                    <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" fill="#756157" fill-opacity="0.3"/>
+                    </svg>
                 </button>
               </p>
               <p class="field-group">
-                <label class="form-label">Дети:</label>
+                <label class="form-label children-label">Дети:</label>
                 <span class="info"></span>
-                <button class="calendar-button" type="button">
-                  <span class="visually-hidden">Увеличить количество</span>
+                <button class="button-quantity button-minus" type="button">
+                  <span class="visually-hidden">Уменьшить количество</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="2" viewBox="0 0 14 2" fill="none">
+                    <path d="M0 0L0 2L14 2V0L0 0Z" fill="#756157" fill-opacity="0.3"/>
+                    </svg>
                 </button>
                 <input class="control-input-children" type="number" name="children" value="2">
-                <button class="calendar-button" type="button">
-                  <span class="visually-hidden">Уменьшить количество</span>
+                <button class="button-quantity button-plus" type="button">
+                  <span class="visually-hidden">Увеличить количество</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                    <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" fill="#756157" fill-opacity="0.3"/>
+                    </svg>
                 </button>
               </p>
           </div>
           </form>
         </section>
-        <button class="button button-subscribe button-blue" type="submit">Найти</button>
+        <button class="button button-blue button-modal-search" type="submit">Найти</button>
       </div>
     </div>
 

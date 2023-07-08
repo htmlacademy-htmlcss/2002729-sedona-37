@@ -1189,6 +1189,14 @@ input[type="number"] {
   cursor: pointer;
 }
 
+.modal-close-button:hover {
+  background-color: rgba(230, 230, 230, 1);
+}
+
+.modal-close-button:active {
+  opacity: 30%;
+}
+
 .booking-form .field-group {
   display: flex;
   flex-wrap: wrap;
@@ -1276,6 +1284,18 @@ input[type="number"] {
 
 .button-minus {
   padding-bottom: 5px;
+}
+
+.button-quantity svg {
+  fill: rgba(117, 97, 87, 0.3);
+}
+
+.button-quantity:hover svg {
+  fill: rgba(0, 0, 0, 1);
+}
+
+.button-quantity:active svg {
+  fill: rgba(0, 0, 0, 0.2);
 }
 
 .adults-label {

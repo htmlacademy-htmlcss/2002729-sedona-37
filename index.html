@@ -165,16 +165,16 @@
               <input class="booking-date-field" type="text" id="booking-date" name="exit-date" placeholder="Укажите дату" required>
               <span class="booking-date-span">На эти даты есть свободные номера. Пока есть.</span>
             </p>
-            <div class="adilts-children-wrapper">
-              <p class="field-group">
-                <label class="form-label adults-label">Взрослые:</label>
+            <div class="people-wrapper">
+              <p class="field-group adults">
+                <label class="form-label adults-label" for="adults">Взрослые:</label>
                 <button class="button-quantity button-minus" type="button">
                   <span class="visually-hidden">Уменьшить количество</span>
                   <svg xmlns="http://www.w3.org/2000/svg" width="14" height="2" viewBox="0 0 14 2" fill="currentColor">
                     <path d="M0 0L0 2L14 2V0L0 0Z"/>
                     </svg>
                 </button>
-                <input class="control-input-adults" type="number" name="adults" value="2" required>
+                <input class="control-input-adults" type="number" name="adults" value="2" id="adults" required>
                 <button class="button-quantity button-plus" type="button">
                   <span class="visually-hidden">Увеличить количество</span>
                   <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="currentColor">
@@ -184,7 +184,7 @@
               </p>
               <p class="field-group">
                 <span class="form-label">
-                  <label class="form-label children-label">Дети:</label>
+                  <label class="form-label children-label" for="children">Дети:</label>
                   <span class="info tooltip">
                     <button class="tooltip-toggle" aria-labelledby="tooltip-label-date" type="button"></button>
                     <span class="tooltip-text" role="tooltip" id="tooltip-label-date">Укажите количество детей, которые&nbsp;будут с вами, возраст которых от 6 до 18 лет. Дети до&nbsp;6 лет размещаются бесплатно.</span>
@@ -196,7 +196,7 @@
                     <path d="M0 0L0 2L14 2V0L0 0Z"/>
                     </svg>
                 </button>
-                <input class="control-input-children" type="number" name="children" value="2">
+                <input class="control-input-children" type="number" name="children" value="2" id="children">
                 <button class="button-quantity button-plus" type="button">
                   <span class="visually-hidden">Увеличить количество</span>
                   <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="currentColor">

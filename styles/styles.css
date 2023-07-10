@@ -1223,6 +1223,8 @@ input[type="number"] {
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
+  margin-right: auto;
+  width: 120px;
 }
 
 .booking-date-field {
@@ -1253,7 +1255,7 @@ input[type="number"] {
   color: rgba(255, 87, 87, 1);
 }
 
-.adilts-children-wrapper {
+.people-wrapper {
   display: flex;
   justify-content: space-between;
 }
@@ -1298,12 +1300,23 @@ input[type="number"] {
   fill: rgba(0, 0, 0, 0.2);
 }
 
-.adults-label {
+.adults .adults-label {
   margin-right: 46px;
+  width: 91px;
+}
+
+.adults {
+  width: 242 px;
+}
+
+.field-group .adults {
+  display: flex;
 }
 
 .children-label {
+  position: relative;
   margin-right: 82px;
+
 }
 
 .button-modal-search {
@@ -1316,7 +1329,7 @@ input[type="number"] {
 /* tooltip */
 .tooltip {
   position: absolute;
-  margin-left: -72px;
+  margin-left: 8px;
 }
 
 .tooltip-toggle {

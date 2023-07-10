@@ -91,17 +91,17 @@ body {
 }
 
 .button-brown:hover,
-.button-brown:focus {
+.button-brown:focus-visible {
   background-color: #615048;
 }
 
 .button-blue:hover,
-.button-blue:focus {
+.button-blue:focus-visible {
   background-color: #68a2ca;
 }
 
 .button-green:hover,
-.button-green:focus {
+.button-green:focus-visible {
   background-color: #6c9e42;
 }
 
@@ -503,7 +503,7 @@ body {
 }
 
 .social-link:hover svg,
-.social-link:focus svg {
+.social-link:focus-visible svg {
   fill: #68a2ca;
 }
 
@@ -521,10 +521,11 @@ body {
   text-decoration: none;
   color: #000000;
   display: block;
+  margin-top: -8px;
 }
 
 .tel-link:hover,
-.tel-link:focus {
+.tel-link:focus-visible {
   color: rgba(117, 97, 87, 1);
 }
 
@@ -542,7 +543,7 @@ body {
 }
 
 .logo-html-academy:hover svg,
-.logo-html-academy:focus svg {
+.logo-html-academy:focus-visible svg {
   fill: rgba(117, 97, 87, 1);
 }
 
@@ -646,6 +647,7 @@ body {
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
+  text-transform: capitalize;
   margin-bottom: 32px;
   padding: 0;
 }
@@ -688,28 +690,24 @@ body {
   border: none;
   background-color: rgba(242, 242, 242, 1);
   appearance: none;
+  -moz-appearance: textfield;
 }
 
 .cost-span {
   position: absolute;
   right: 20px;
-  top: 11px;
+  top: 13px;
   font-size: 18px;
   line-height: 24px;
   text-align: right;
   color: rgba(0, 0, 0, 0.3);
 }
 
-input[type="number"]::-webkit-outer-spin-button,
-input[type="number"]::-webkit-inner-spin-button {
+.control-input-cost::-webkit-outer-spin-button,
+.control-input-cost::-webkit-inner-spin-button {
   appearance: none;
   margin: 0;
 }
-
-input[type="number"] {
-  -moz-appearance: textfield;
-}
-
 
 .control-input-cost:hover {
   background-color: rgba(230, 230, 230, 1);
@@ -755,12 +753,12 @@ input[type="number"] {
 }
 
 .min-toggle {
-  top: -6px;
+  top: -7px;
   left: 0;
 }
 
 .max-toggle {
-  top: -6px;
+  top: -7px;
   right: -1px;
 }
 
@@ -845,7 +843,7 @@ input[type="number"] {
   transform: rotate(-45deg);
 }
 
-.control-input[type="checkbox"]:focus + .control-mark {
+.control-input[type="checkbox"]:focus-visible + .control-mark {
   outline: 2px solid rgba(131, 179, 211, 1);
 }
 
@@ -859,7 +857,7 @@ input[type="number"] {
   color: rgba(255, 255, 255, 1);
 }
 
-.catalog-filter-item:focus {
+.catalog-filter-item:focus-visible {
   opacity: 30%;
   color: rgba(255, 255, 255, 1);
 }
@@ -879,7 +877,7 @@ input[type="number"] {
   content: "";
 }
 
-.control-input[type="radio"]:focus + .control-mark {
+.control-input[type="radio"]:focus-visible + .control-mark {
   outline: 2px solid rgba(131, 179, 211, 1);
 }
 
@@ -931,8 +929,12 @@ input[type="number"] {
 }
 
 .sorting-control:hover,
-.sorting-control:focus {
+.sorting-control:focus-visible {
   border: 2px solid #68a2ca;
+}
+
+.sorting-control:disabled {
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .card-view-buttons {
@@ -1223,6 +1225,7 @@ input[type="number"] {
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
+  text-transform: capitalize;
   margin-right: auto;
   width: 120px;
 }
@@ -1262,6 +1265,7 @@ input[type="number"] {
 
 .control-input-adults,
 .control-input-children {
+  font-family: inherit;
   font-size: 18px;
   line-height: 20px;
   font-weight: 700;
@@ -1270,6 +1274,13 @@ input[type="number"] {
   border: none;
   background-color: rgba(242, 242, 242, 1);
   text-align: center;
+  -moz-appearance: textfield;
+}
+
+.modal-booking input::-webkit-outer-spin-button,
+.modal-booking input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
 }
 
 .button-quantity {
@@ -1305,10 +1316,6 @@ input[type="number"] {
   width: 91px;
 }
 
-.adults {
-  width: 242 px;
-}
-
 .field-group .adults {
   display: flex;
 }
@@ -1316,7 +1323,6 @@ input[type="number"] {
 .children-label {
   position: relative;
   margin-right: 82px;
-
 }
 
 .button-modal-search {
@@ -1378,6 +1384,6 @@ input[type="number"] {
 }
 
 .tooltip-toggle:hover + .tooltip-text,
-.tooltip-toggle:focus + .tooltip-text {
+.tooltip-toggle:focus-visible + .tooltip-text {
   display: block;
 }

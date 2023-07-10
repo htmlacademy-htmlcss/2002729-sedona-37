@@ -108,7 +108,7 @@
         <p class="subscribe-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="subscribe-form" action="https://echo.htmlacademy.ru">
           <label class="visually-hidden" for="newsletter-email">Email</label>
-          <input type="email" name="e-mail" placeholder="Ваш e-mail"  id="newsletter-email" required>
+          <input class="subscribe-input" type="email" name="e-mail" placeholder="Ваш e-mail"  id="newsletter-email" required>
           <button class="button button-subscribe button-blue" type="submit">Подписаться</button>
         </form>
       </section>
@@ -145,6 +145,70 @@
           </a>
       </p>
     </footer>
+    </div>
+
+    <div class=" modal-container">
+      <div class="modal modal-booking">
+        <button class="modal-close-button" type="button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <section class="modal-content">
+          <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+          <form class="booking-form" action="https://echo.htmlacademy.ru/" method="post">
+            <p class="field-group">
+              <label class="form-label" for="booking-date">Дата Заезда:</label>
+              <input class="booking-date-field" type="text" id="booking-date" name="check-in-date" placeholder="Укажите дату" required>
+              <span class="booking-date-span booking-date-error">Мы не можем отправить вас в прошлое.</span>
+            </p>
+            <p class="field-group">
+              <label class="form-label" for="booking-date">Дата Выезда:</label>
+              <input class="booking-date-field" type="text" id="booking-date" name="exit-date" placeholder="Укажите дату" required>
+              <span class="booking-date-span">На эти даты есть свободные номера. Пока есть.</span>
+            </p>
+            <div class="adilts-children-wrapper">
+              <p class="field-group">
+                <label class="form-label adults-label">Взрослые:</label>
+                <button class="button-quantity button-minus" type="button">
+                  <span class="visually-hidden">Уменьшить количество</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="2" viewBox="0 0 14 2" fill="currentColor">
+                    <path d="M0 0L0 2L14 2V0L0 0Z"/>
+                    </svg>
+                </button>
+                <input class="control-input-adults" type="number" name="adults" value="2" required>
+                <button class="button-quantity button-plus" type="button">
+                  <span class="visually-hidden">Увеличить количество</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="currentColor">
+                    <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z"/>
+                    </svg>
+                </button>
+              </p>
+              <p class="field-group">
+                <span class="form-label">
+                  <label class="form-label children-label">Дети:</label>
+                  <span class="info tooltip">
+                    <button class="tooltip-toggle" aria-labelledby="tooltip-label-date" type="button"></button>
+                    <span class="tooltip-text" role="tooltip" id="tooltip-label-date">Укажите количество детей, которые&nbsp;будут с вами, возраст которых от 6 до 18 лет. Дети до&nbsp;6 лет размещаются бесплатно.</span>
+                  </span>
+                </span>
+                <button class="button-quantity button-minus" type="button">
+                  <span class="visually-hidden">Уменьшить количество</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="2" viewBox="0 0 14 2" fill="currentColor">
+                    <path d="M0 0L0 2L14 2V0L0 0Z"/>
+                    </svg>
+                </button>
+                <input class="control-input-children" type="number" name="children" value="2">
+                <button class="button-quantity button-plus" type="button">
+                  <span class="visually-hidden">Увеличить количество</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="currentColor">
+                    <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z"/>
+                    </svg>
+                </button>
+              </p>
+          </div>
+          <button class="button button-blue button-modal-search" type="submit">Найти</button>
+          </form>
+        </section>
+      </div>
     </div>
   </body>
 </html>

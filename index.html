@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/png" href="images/favicon.png">
   </head>
   <body>
     <div class="page-container">
@@ -174,7 +176,7 @@
                     <path d="M0 0L0 2L14 2V0L0 0Z"/>
                     </svg>
                 </button>
-                <input class="control-input-adults" type="number" name="adults" value="2" id="adults" required>
+                <input class="control-input-adults" type="number" name="adults" value="2" id="adults" min="1" required>
                 <button class="button-quantity button-plus" type="button">
                   <span class="visually-hidden">Увеличить количество.</span>
                   <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="currentColor">
@@ -196,7 +198,7 @@
                     <path d="M0 0L0 2L14 2V0L0 0Z"/>
                   </svg>
                 </button>
-                <input class="control-input-children" type="number" name="children" value="2" id="children">
+                <input class="control-input-children" type="number" name="children" value="2" id="children" min="0">
                 <button class="button-quantity button-plus" type="button">
                   <span class="visually-hidden">Увеличить количество.</span>
                   <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="currentColor">

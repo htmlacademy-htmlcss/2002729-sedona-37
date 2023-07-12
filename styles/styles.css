@@ -81,6 +81,7 @@ img {
   padding: 8px 34px;
   border-radius: 4px;
   cursor: pointer;
+  max-width: 300px;
 }
 
 .button-brown {
@@ -263,7 +264,7 @@ img {
 
 .advantages-description {
   margin-top: 0;
-  margin-bottom: 12px;
+  margin-bottom: 15px;
   margin-left: 85px;
   margin-right: 85px;
   position: relative;
@@ -307,6 +308,8 @@ img {
 .advantages-picture {
   width: 1200px;
   display: flex;
+  object-fit: cover;
+  height: 100%;
 }
 
 .advantages-reverse {
@@ -424,17 +427,20 @@ img {
   line-height: 36px;
   margin-bottom: 96px;
   padding: 8px 50px;
+  max-width: 700px;
 }
 
 /* subscribe */
 .subscribe {
   text-align: center;
+  padding: 0 70px;
 }
 
 .subscribe-background {
   background-image: url("../images/index-subscribe-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  padding: 0 70px;
 }
 
 .subscribe-heading {
@@ -490,13 +496,14 @@ img {
 }
 
 .social-list {
-  max-width: 150px;
+  width: 150px;
   list-style: none;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 0;
   margin: 0;
+  flex-shrink: 0;
 }
 
 .social-link {
@@ -637,7 +644,7 @@ img {
 
 .catalog-filter {
   display: flex;
-  padding: 0 70px 73px;
+  padding: 0 70px 70px;
   margin: 0;
 }
 
@@ -672,7 +679,7 @@ img {
 }
 
 .catalog-filter-housing {
-  margin-right: 140px;
+  margin-right: auto;
 }
 
 .catalog-filter-cost {
@@ -782,8 +789,7 @@ img {
 .catalog-filter-buttons {
   display: flex;
   flex-direction: column;
-  height: 104px;
-  margin-left: auto;
+  max-width: 190px;
 }
 
 .button-filter-accept,
@@ -901,7 +907,6 @@ img {
   padding: 0 70px;
   margin-top: 50px;
   margin-bottom: 40px;
-  height: 49px;
 }
 
 .filter-sort-title {
@@ -911,6 +916,7 @@ img {
   min-width: 338px;
   text-transform: uppercase;
   color: #000000;
+  margin: 0;
   margin-right: auto;
 }
 

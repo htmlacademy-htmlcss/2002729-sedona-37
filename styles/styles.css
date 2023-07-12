@@ -911,7 +911,7 @@ img {
   min-width: 338px;
   text-transform: uppercase;
   color: #000000;
-  margin-right: 200px;
+  margin-right: auto;
 }
 
 .sorting {

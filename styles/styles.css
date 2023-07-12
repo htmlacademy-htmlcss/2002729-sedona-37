@@ -233,6 +233,11 @@ img {
   text-align: center;
 }
 
+.advantages-images {
+  object-fit: cover;
+  height: 100%;
+}
+
 .advantages-heading {
   font-weight: 700;
   font-size: 30px;
@@ -308,8 +313,6 @@ img {
 .advantages-picture {
   width: 1200px;
   display: flex;
-  object-fit: cover;
-  height: 100%;
 }
 
 .advantages-reverse {

@@ -167,8 +167,8 @@ img {
 
 .navigation-link-current::before {
   position: absolute;
-  right: 17px;
-  bottom: -1px;
+  right: 16px;
+  bottom: 0;
   left: 17px;
   height: 2px;
   background-color: #756257;
@@ -459,10 +459,8 @@ img {
 .subscribe-text {
   font-size: 22px;
   line-height: 26px;
-  margin-top: 0;
-  margin-left: 362px;
-  margin-right: 362px;
-  margin-bottom: 54px;
+  margin: 0 260px 54px;
+
 }
 
 .subscribe-form {
@@ -1223,7 +1221,7 @@ img {
   margin-bottom: 23px;
 }
 
-.adilts-children-wrapper .field-group {
+.people-wrapper .field-group {
   margin-bottom: 48px;
 }
 
@@ -1241,8 +1239,9 @@ img {
   line-height: 24px;
   font-weight: 700;
   text-transform: capitalize;
-  margin-right: auto;
+  margin-right: 12px;
   width: 120px;
+  position: relative;
 }
 
 .booking-date-field {
@@ -1343,8 +1342,9 @@ img {
 .button-modal-search {
   font-size: 20px;
   line-height: 24px;
-  width: 577px;
+  min-width: 577px;
   padding: 18px 0;
+  border-radius: 10px;
 }
 
 /* tooltip */

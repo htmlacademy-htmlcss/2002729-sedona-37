@@ -220,6 +220,7 @@ img {
   background-repeat: no-repeat;
   background-size: auto, cover;
   background-position: bottom, center;
+  background-color: #6185a5;
   text-align: center;
 }
 
@@ -443,6 +444,7 @@ img {
   background-image: url("../images/index-subscribe-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: #6185a5;
   padding: 0 70px;
 }
 
@@ -574,7 +576,7 @@ img {
   color: #ffffff;
   font-size: 18px;
   line-height: 23px;
-  background-color: #82b3d3;
+  background-color: #6185a5;
 }
 
 .catalog-filters-header h1 {
@@ -1185,7 +1187,7 @@ img {
 }
 
 .modal-booking {
-  width: 717px;
+  max-width: 717px;
 }
 
 .modal-close-button {
@@ -1200,7 +1202,7 @@ img {
   border-radius: 50%;
   background-image: url("../images/modal-close.svg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: 50% 58%;
   cursor: pointer;
 }
 
@@ -1347,10 +1349,10 @@ img {
   border-radius: 10px;
 }
 
+
 /* tooltip */
 .tooltip {
   position: absolute;
-  margin-left: 8px;
 }
 
 .tooltip-toggle {
@@ -1383,6 +1385,7 @@ img {
   transform: translateX(-45%);
   z-index: 1;
   display: none;
+  text-transform: none;
 }
 
 .tooltip-text::after {

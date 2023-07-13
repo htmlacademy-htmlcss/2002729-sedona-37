@@ -167,8 +167,8 @@ img {
 
 .navigation-link-current::before {
   position: absolute;
-  right: 17px;
-  bottom: -1px;
+  right: 16px;
+  bottom: 0;
   left: 17px;
   height: 2px;
   background-color: #756257;
@@ -220,6 +220,7 @@ img {
   background-repeat: no-repeat;
   background-size: auto, cover;
   background-position: bottom, center;
+  background-color: #6185a5;
   text-align: center;
 }
 
@@ -443,6 +444,7 @@ img {
   background-image: url("../images/index-subscribe-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: #6185a5;
   padding: 0 70px;
 }
 
@@ -459,10 +461,8 @@ img {
 .subscribe-text {
   font-size: 22px;
   line-height: 26px;
-  margin-top: 0;
-  margin-left: 362px;
-  margin-right: 362px;
-  margin-bottom: 54px;
+  margin: 0 260px 54px;
+
 }
 
 .subscribe-form {
@@ -576,7 +576,7 @@ img {
   color: #ffffff;
   font-size: 18px;
   line-height: 23px;
-  background-color: #82b3d3;
+  background-color: #6185a5;
 }
 
 .catalog-filters-header h1 {
@@ -1187,7 +1187,7 @@ img {
 }
 
 .modal-booking {
-  width: 717px;
+  max-width: 717px;
 }
 
 .modal-close-button {
@@ -1202,7 +1202,7 @@ img {
   border-radius: 50%;
   background-image: url("../images/modal-close.svg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: 50% 58%;
   cursor: pointer;
 }
 
@@ -1223,7 +1223,7 @@ img {
   margin-bottom: 23px;
 }
 
-.adilts-children-wrapper .field-group {
+.people-wrapper .field-group {
   margin-bottom: 48px;
 }
 
@@ -1241,8 +1241,9 @@ img {
   line-height: 24px;
   font-weight: 700;
   text-transform: capitalize;
-  margin-right: auto;
+  margin-right: 12px;
   width: 120px;
+  position: relative;
 }
 
 .booking-date-field {
@@ -1343,14 +1344,15 @@ img {
 .button-modal-search {
   font-size: 20px;
   line-height: 24px;
-  width: 577px;
+  min-width: 577px;
   padding: 18px 0;
+  border-radius: 10px;
 }
+
 
 /* tooltip */
 .tooltip {
   position: absolute;
-  margin-left: 8px;
 }
 
 .tooltip-toggle {
@@ -1383,6 +1385,7 @@ img {
   transform: translateX(-45%);
   z-index: 1;
   display: none;
+  text-transform: none;
 }
 
 .tooltip-text::after {

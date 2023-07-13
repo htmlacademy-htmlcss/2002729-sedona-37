@@ -149,7 +149,7 @@
     </footer>
     </div>
 
-    <div class="visually-hidden modal-container">
+    <div class="modal-container" data-test="modal">
       <div class="modal modal-booking">
         <button class="modal-close-button" type="button">
           <span class="visually-hidden">Закрыть.</span>
@@ -159,12 +159,12 @@
           <form class="booking-form" action="https://echo.htmlacademy.ru/" method="post">
             <p class="field-group">
               <label class="form-label" for="booking-date-check-in">Дата заезда:</label>
-              <input class="booking-date-field" type="text" id="booking-date-check-in" name="check-in-date" placeholder="Укажите дату" required>
+              <input class="booking-date-field" type="text" id="booking-date-check-in" name="check-in-date" placeholder="Укажите дату" value="27 апреля 2020" required>
               <span class="booking-date-span booking-date-error">Мы не можем отправить вас в прошлое.</span>
             </p>
             <p class="field-group">
               <label class="form-label" for="booking-date-exit">Дата выезда:</label>
-              <input class="booking-date-field" type="text" id="booking-date-exit" name="exit-date" placeholder="Укажите дату" required>
+              <input class="booking-date-field" type="text" id="booking-date-exit" name="exit-date" placeholder="Укажите дату" value="1 сентября 2023" required>
               <span class="booking-date-span">На эти даты есть свободные номера. Пока есть.</span>
             </p>
             <div class="people-wrapper">

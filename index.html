@@ -57,7 +57,7 @@
               <h3 class="advantages-title">Настоящий городок</h3>
               <p class="advantages-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
             </div>
-            <img class="advantages-images" src="images/photo-1.jpg" width="800" height="385" alt="Городок Седона на фоне гор">
+            <img class="advantages-images" src="images/photo-1.jpg"  width="800" height="385" alt="Городок Седона на фоне гор">
           </li>
           <li class="advantages-item background-light-blue">
               <h3 class="advantages-title">Небольшая площадь</h3>
@@ -99,7 +99,7 @@
           </li>
          </ul>
       </section>
-      <section class="booking"data-test="search">
+      <section class="booking" data-test="search">
         <h2 class="visually-hidden">Бронирование.</h2>
         <p class="booking-heading">Заинтересовались?</p>
         <p class="booking-text">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
@@ -149,9 +149,12 @@
     </footer>
     </div>
 
-    <div class="visually-hidden modal-container">
+    <div class="modal-container modal-close">
       <div class="modal modal-booking">
         <button class="modal-close-button" type="button">
+          <svg width="15" height="15" viewBox="0 0 15 15" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path d="M14.4905 1.78288L13.1982 0.49057L7.49048 6.19826L1.78279 0.49057L0.490479 1.78288L6.19817 7.49057L0.490479 13.1983L1.78279 14.4906L7.49048 8.78288L13.1982 14.4906L14.4905 13.1983L8.78279 7.49057L14.4905 1.78288Z"/>
+          </svg>
           <span class="visually-hidden">Закрыть.</span>
         </button>
         <section class="modal-content">
@@ -159,12 +162,12 @@
           <form class="booking-form" action="https://echo.htmlacademy.ru/" method="post">
             <p class="field-group">
               <label class="form-label" for="booking-date-check-in">Дата заезда:</label>
-              <input class="booking-date-field" type="text" id="booking-date-check-in" name="check-in-date" placeholder="Укажите дату" required>
+              <input class="booking-date-field" type="text" id="booking-date-check-in" name="check-in-date" placeholder="Укажите дату" value="27 апреля 2020" required>
               <span class="booking-date-span booking-date-error">Мы не можем отправить вас в прошлое.</span>
             </p>
             <p class="field-group">
               <label class="form-label" for="booking-date-exit">Дата выезда:</label>
-              <input class="booking-date-field" type="text" id="booking-date-exit" name="exit-date" placeholder="Укажите дату" required>
+              <input class="booking-date-field" type="text" id="booking-date-exit" name="exit-date" placeholder="Укажите дату" value="1 сентября 2023" required>
               <span class="booking-date-span">На эти даты есть свободные номера. Пока есть.</span>
             </p>
             <div class="people-wrapper">
@@ -176,7 +179,7 @@
                     <path d="M0 0L0 2L14 2V0L0 0Z"/>
                     </svg>
                 </button>
-                <input class="control-input-adults" type="number" name="adults" value="2" id="adults" min="1" required>
+                <input class="control-input-adults" type="number" name="adults" value="2" id="adults" min="1" max="99" required>
                 <button class="button-quantity button-plus" type="button">
                   <span class="visually-hidden">Увеличить количество.</span>
                   <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="currentColor">
@@ -198,7 +201,7 @@
                     <path d="M0 0L0 2L14 2V0L0 0Z"/>
                   </svg>
                 </button>
-                <input class="control-input-children" type="number" name="children" value="2" id="children" min="0">
+                <input class="control-input-children" type="number" name="children" value="2" id="children" min="0" max="99">
                 <button class="button-quantity button-plus" type="button">
                   <span class="visually-hidden">Увеличить количество.</span>
                   <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="currentColor">

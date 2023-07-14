@@ -25,7 +25,7 @@ body {
   background-color: #f2f2f2;
   color: #333333;
   margin: 0;
-  min-width: 1200px;
+  min-width: 1280px;
 }
 
 .visually-hidden {
@@ -62,7 +62,8 @@ img {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
-.main-index {
+.main-index,
+.main-inner {
   flex-grow: 1;
 }
 
@@ -215,7 +216,7 @@ img {
 
 /* hero */
 .hero {
-  height: 485px; /* пока так  */
+  min-height: 485px;
   background-image: url("../images/hero-white-vector.svg"), url("../images/index-hero-background.jpg");
   background-repeat: no-repeat;
   background-size: auto, cover;
@@ -226,7 +227,7 @@ img {
 
 .hero img {
   margin-top: 51px;
-  margin-bottom: 82px;
+  margin-bottom: 78px;
 }
 
 /* advantages */
@@ -236,7 +237,6 @@ img {
 
 .advantages-images {
   object-fit: cover;
-  height: 100%;
 }
 
 .advantages-heading {
@@ -304,6 +304,10 @@ img {
   list-style: none;
 }
 
+.advantages-wrapper {
+  width: 400px;
+}
+
 .advantages-item {
   font-size: 18px;
   line-height: 21px;
@@ -357,6 +361,7 @@ img {
   font-size: 22px;
   line-height: 26px;
   color: #333333;
+  margin: 0;
   margin-bottom: 64px;
 }
 
@@ -503,16 +508,21 @@ img {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
   padding: 0;
   margin: 0;
   flex-shrink: 0;
 }
 
+.social-item {
+  min-height: 40px;
+}
+
 .social-link {
-  min-width: 24px;
-  min-height: 17px;
-  display: block;
+  min-width: 47px;
+  min-height: 40px;
+  display: flex;
   padding: 12px 12px;
   color: #83b3d3;
 }
@@ -536,7 +546,7 @@ img {
   text-decoration: none;
   color: #000000;
   display: block;
-  margin-top: -8px;
+  margin-left: -5px;
 }
 
 .tel-link:hover,
@@ -703,7 +713,7 @@ img {
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
-  padding: 0 20px;
+  padding: 0 45px 0 20px;
   width: 143px;
   height: 48px;
   border: none;
@@ -1025,6 +1035,7 @@ img {
 
 .product-card-link {
   display: block;
+  text-decoration: none;
   grid-column: 1/-1;
 }
 
@@ -1180,6 +1191,7 @@ img {
 
 .modal {
   position: relative;
+  color: #000000;
   margin: auto;
   background-color: #ffffff;
   padding: 64px 70px;
@@ -1194,25 +1206,26 @@ img {
 .modal-close-button {
   position: absolute;
   padding: 0;
-  top: 61px;
-  right: 52px;
+  top: 64px;
+  right: 53px;
   width: 52px;
   height: 52px;
   background-color: rgba(242, 242, 242, 1);
   border: none;
   border-radius: 50%;
-  background-image: url("../images/modal-close.svg");
-  background-repeat: no-repeat;
-  background-position: 50% 58%;
   cursor: pointer;
+}
+
+.modal-close-button svg {
+  transform: translate(1px, 2px);
 }
 
 .modal-close-button:hover {
   background-color: rgba(230, 230, 230, 1);
 }
 
-.modal-close-button:active {
-  opacity: 30%;
+.modal-close-button:active svg {
+  fill: rgba(0, 0, 0, 0.3);
 }
 
 .booking-form .field-group {
@@ -1405,4 +1418,9 @@ img {
 .tooltip-toggle:hover + .tooltip-text,
 .tooltip-toggle:focus-visible + .tooltip-text {
   display: block;
+}
+
+/* закрывает модальное окно*/
+.modal-close {
+  display: none;
 }

@@ -264,8 +264,8 @@ img {
   margin: 102px 112px 62px;
 }
 
-.advantages-list li:not(.advantages-picture) h3 {
-  margin: 112px 112px 62px;
+.advantages-item:not(.advantages-picture) h3 {
+  margin: 113px 112px 62px;
 }
 
 .advantages-description {
@@ -286,12 +286,12 @@ img {
   content: "";
 }
 
-.advantages-list li:not(.advantages-picture) .advantages-description::before {
+.advantages-item:not(.advantages-picture) .advantages-description::before {
   position: absolute;
   width: 60px;
   height: 2px;
-  top: -31px;
-  left: 83px;
+  top: -33px;
+  left: 85px;
   background-color: rgba(0, 0, 0, 0.3);
   content: "";
 }

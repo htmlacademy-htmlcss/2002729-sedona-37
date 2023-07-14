@@ -1035,6 +1035,7 @@ img {
 
 .product-card-link {
   display: block;
+  text-decoration: none;
   grid-column: 1/-1;
 }
 

@@ -810,13 +810,18 @@ img {
   right: -1px;
 }
 
-.range-toggle:hover {
+.range-toggle:hover:not(:disabled) {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
 }
 
-.range-toggle:active {
+.range-toggle:active:not(:disabled) {
   border: 2px solid rgba(131, 179, 211, 0.6);
   box-shadow: 0 7px 15px rgba(0, 0, 0, 0.25);
+}
+
+.range-toggle:disabled {
+  background-color: #333333;
+  cursor: default;
 }
 
 .catalog-filter-buttons {
@@ -869,10 +874,6 @@ img {
   font-size: 18px;
 }
 
-.control:active .control-mark {
-  outline: 2px solid rgba(131, 179, 211, 1);
-}
-
 .control-input[type="checkbox"]:checked + .control-mark::before {
   position: absolute;
   top: 11px;
@@ -899,18 +900,6 @@ img {
   outline: 2px solid rgba(131, 179, 211, 1);
 }
 
-.catalog-filter-item:hover {
-  opacity: 60%;
-}
-
-.catalog-filter-item:active {
-  opacity: 30%;
-}
-
-.catalog-filter-item:focus-visible {
-  opacity: 30%;
-}
-
 .control-input[type="radio"] + .control-mark {
   border-radius: 50%;
 }
@@ -930,11 +919,44 @@ img {
   outline: 2px solid rgba(131, 179, 211, 1);
 }
 
-.control-input:disabled + .control-mark,
-.control-input:disabled ~ .control-label {
+.catalog-filter-item:focus-visible {
   opacity: 30%;
 }
 
+
+.control-input[type="radio"]:hover + .control-mark,
+.control-input[type="radio"]:hover ~ .control-label {
+  opacity: 60%;
+  cursor: pointer;
+}
+
+.control-input[type="radio"]:active + .control-mark,
+.control-input[type="radio"]:active ~ .control-label {
+  opacity: 30%;
+}
+
+.control-input[type="radio"]:disabled + .control-mark,
+.control-input[type="radio"]:disabled ~ .control-label {
+  opacity: 20%;
+  cursor: default;
+}
+
+.control-input[type="checkbox"]:hover + .control-mark,
+.control-input[type="checkbox"]:hover ~ .control-label {
+  opacity: 60%;
+  cursor: pointer;
+}
+
+.control-input[type="checkbox"]:active + .control-mark,
+.control-input[type="checkbox"]:active ~ .control-label {
+  opacity: 30%;
+}
+
+.control-input[type="checkbox"]:disabled + .control-mark,
+.control-input[type="checkbox"]:disabled ~ .control-label {
+  opacity: 20%;
+  cursor: default;
+}
 
 /* filter-sort */
 .filter-sort {
